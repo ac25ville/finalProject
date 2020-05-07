@@ -3,6 +3,7 @@
         echo $_POST['feedback_name'].' '.$_POST['feedback_sNum'].' '.$_POST['feedback_text'];
     };
 
+    printFormValue();
     if($_GET['funct']=='printFormValue'){
         printFromValue();
     }
