@@ -6,8 +6,9 @@
     printFormValue();
     if($_GET['funct']=='printFormValue'){
         printFromValue();
-        echo Hello World!
+        echo Hello World!;
     }
     
+    echo Hello World!;
 
 ?>
