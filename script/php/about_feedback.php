@@ -1,6 +1,6 @@
 <?php
     function writeFeedback(){
-        $file = fopen('feedbackdata.txt', 'a') or die("Unable to open file!");
+        $file = fopen('feedbackdata.txt', 'w') or die("Unable to open file!");
         fwrite($file, $_POST['feedback_name'].'\n');
         fwrite($file, $_POST['feedback_sNum'].'\n');
         fwrite($file, $_POST['feedback_response'].'\n');
