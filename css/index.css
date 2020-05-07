@@ -1,0 +1,23 @@
+/*
+    Author: Austin Corteville
+    Pawprint: acc9cm
+    Date: 4/7/2020
+    Final Project
+
+    @description: Index specfic CSS
+*/
+
+@import url("overall.css");
+
+#page_top_img_wrap{
+    margin-bottom: 5%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 85%;
+    text-align: center;
+}
+
+.page_top_img{
+    border: 3px solid #F2FAC3;
+    margin: 2%;
+}

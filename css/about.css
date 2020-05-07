@@ -1,0 +1,46 @@
+/*
+    Author: Austin Corteville
+    Pawprint: acc9cm
+    Date: 4/20/2020
+    Final Project
+
+    @description: CSS for About page
+
+    @refrences:
+*/
+
+@import url("overall.css");
+
+img{
+    display: block;
+    border: 5px double #EDEDF0;
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+
+h3{
+    text-align: center;
+    font-style: italic;
+}
+form{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.response_wrap{
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+#textarea_wrap{
+    margin: 10px;
+    padding: 10px;
+}
+textarea{
+    width: 80%;
+    height: 150px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}

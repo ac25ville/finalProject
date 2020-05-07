@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Name: Austin Corteville
+    Pawprint: acc9cm
+    Date: 4/5/2020
+    Final Project
+
+    @refrences:
+    -->
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="../script/js_jquery/about.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../css/about.css">
+<title>Bike Resource Center - About the Project</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-top sticky-top">
+        <span id="navbar_title"><a href="index.html" class="text-decoration-none navbar-brand">BRC</a></span>
+        <a href="index.html" class="text-decoration-none navbar-brand">Home</a>
+        <a href="about.html" class="text-decoration-none navbar-brand">About the Project</a>
+        <a href="services_hours.html" class="text-decoration-none navbar-brand">Services and Hours</a>
+        <a href="self_help_diy.html" class="text-decoration-none navbar-brand">Self Help &amp; DIY</a>
+        <a href="mechanic_login.html" class="text-decoration-none navbar-brand">Mechanic Login</a>
+    </nav>
+    
+    <div id="page_title">
+        Bike Resource Center: About the Project
+    </div>
+    
+    <img src="../images/sustain.png" class="shadow">
+    
+    <div class="content shadow">
+        <h3>Mission</h3>
+    </div>
+    
+    <div class="content shadow">
+        <h3>Team</h3>
+    </div>
+    
+    <div class="content shadow">
+        <h3>Scope</h3>
+    </div>
+    
+    <div class="content shadow">
+        <h3>Future</h3>
+    </div>
+    
+    <div class="content shadow">
+<!--
+    Make a form here where they can submit a response and choose what it's about, including ideas for BRC, the office overall, or feedback for the BRC
+-->
+        <h3>Feedback</h3>
+        <form id="feedback_form" action="../script/php/about_feedback.php?funct='printFormValue'" method="POST">
+            <div class="response_wrap">
+                <label for="feedback_name">Name:</label><br><input type="text" id="feedback_name">
+                
+            </div>
+            <div class="response_wrap">
+                <label for="feedback_sNum">Student#:</label><br><input type="number" id="feedback_sNum">
+            </div>
+            <div class="textarea_wrap">
+                <textarea placeholder="Type a short response here!" id="feedback_text"></textarea>
+            </div>
+            <button type="button" id="feedback_submit">Submit</button>
+        </form>
+    </div>
+    
+    <div class="content shadow">
+        <h3>Inquire about joining!</h3>
+        
+    </div>
+    
+    
+
+</body>
+</html>

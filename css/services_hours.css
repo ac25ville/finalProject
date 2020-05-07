@@ -1,0 +1,25 @@
+/*
+    Author: Austin Corteville
+    Pawprint: acc9cm
+    Date: 4/11/2020
+    Final Project
+
+    @description: CSS for Services and Hours page
+*/
+@import url("overall.css");
+
+img{
+    float: left;
+    margin-right: 25px;
+    vertical-align: middle;
+    border: 5px outset #E8C574;
+}
+
+h2{
+    text-align: center;
+}
+
+.content_title{
+    border-bottom: 5px groove #E8C574;
+    float: right;
+}
