@@ -5,8 +5,8 @@ $(function(){
     $.each(days, function(index,day){
         console.log(day);
     })
-    $.get("../script/php/hours_request.php?hours=yes&day="+day, function(data){
-       
+    $.get("../script/php/hours_request.php?hours=yes&day="+days[0], function(data){
+       console.log(data);
      });
      
 });
