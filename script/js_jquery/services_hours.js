@@ -2,7 +2,7 @@
 
 $(function(){
     var day = "";
-     $.get("../php/hours_request.php?hours=yes&day="+day, function(){
+     $.get("../php/hours_request.php", function(data){
         console.log("success");
      });
 });
