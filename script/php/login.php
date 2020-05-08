@@ -23,7 +23,7 @@ function handle_login(){
     
     if($username="test"&& $password=="pass"){
         setcookie('username', $username);
-        header("Location: page1.php");
+        header("Location: https://www.google.com/");
     }else if($username!="test"){
         $error= "Error: Incorect username";
         require $loginURL;
