@@ -9,7 +9,7 @@
 //        fwrite($file, 'endofpost\n');
 //        fclose($file);
         echo $_POST['feedback_name']."\n". $_POST['feedback_sNum']."\n".$_POST['feedback_response']."\n";
-        echo '\n<a href="http://ec2-3-134-90-38.us-east-2.compute.amazonaws.com/pages/about.html">Back to About Page</a>';
+        echo "\n".'<a href="http://ec2-3-134-90-38.us-east-2.compute.amazonaws.com/pages/about.html">Back to About Page</a>';
     }
 
     if(isset($_GET['funct'])){
