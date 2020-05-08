@@ -45,11 +45,11 @@
     <div class="shadow content clearfix">
         <img src="../images/mizzou_clock.png">
         <h2>Hours:</h2>
-        <h4>Monday: N/A</h4>
-        <h4>Tuesday: N/A</h4>
-        <h4>Wednesday: N/A</h4>
-        <h4>Thursday: N/A</h4>
-        <h4>Friday: N/A</h4>
+        <h4 id="monday">Monday: N/A</h4>
+        <h4 id="tuesday">Tuesday: N/A</h4>
+        <h4 id="wednesday">Wednesday: N/A</h4>
+        <h4 id="thursday">Thursday: N/A</h4>
+        <h4 id="friday">Friday: N/A</h4>
     </div>
 
 </body>
