@@ -1,7 +1,7 @@
 <?php 
     $username = empty($_COOKIE['username'])?'': $_COOKIE['username'];
     if(!$username){
-        header("Location: ../../script/php/login.php");
+        header("Location: ../mechanic_login.php");
         exit;
     }
 
