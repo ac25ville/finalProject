@@ -32,8 +32,9 @@
         <?php
         if(isset($_GET['funct'])){
             if($_GET['funct']=='printFeedback'){
-            printFeedback();
-        } 
+                printFeedback();
+            }
+        }
         ?>
     </div>
 </body>
