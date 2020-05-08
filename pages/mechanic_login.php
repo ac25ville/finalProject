@@ -37,7 +37,7 @@
     <div id="login_wrap">
         <h2>Login</h2>
         <p>This is the login for the Bike Resource Center Mechanics.</p>
-        <form id="login_form" action="#" method="POST">
+        <form id="login_form" action="../script/php/login.php" method="POST">
             
             <input type="hidden" name="action" value="do_login">
             

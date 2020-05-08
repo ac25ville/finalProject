@@ -21,7 +21,7 @@ function handle_login(){
     
     $loginURL = "../../pages/mechanic_login.php";
     
-    if($username="test"&& $password=="pass"){
+    if($username="test" && $password=="pass"){
         setcookie('username', $username);
         header("Location: https://www.google.com/");
     }else if($username!="test"){
