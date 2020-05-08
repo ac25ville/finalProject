@@ -1,5 +1,11 @@
 <?php 
-    require "../script/php/redirect.php"
+    require "../script/php/redirect.php";
+
+    $username = empty($_COOKIE['username'])?'': $_COOKIE['username'];
+    if(!$username){
+        header("Location: login.php");
+        exit;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,11 +47,14 @@
         <h2>Login</h2>
         <p>This is the login for the Bike Resource Center Mechanics.</p>
         <form id="login_form" action="#" method="POST">
-            <label for="username">Username:</label> <input type="text" id="username">
+            
+            <input type="hidden" name="action" value="do_login">
+            
+            <label for="username">Username:</label> <input type="text" id="username" name="username">
             <br>
-            <label for="password">Password:</label> <input type="password" id="password">
+            <label for="password">Password:</label> <input type="password" id="password" name="password">
             <br>
-            <button type="button" id="login">Login</button>
+            <button type="submit" id="login">Login</button>
         </form>
     </div>
 

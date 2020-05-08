@@ -11,7 +11,6 @@
             default: return "No hours for this day";
         }
     }
-    
     if(isset($_GET['hours'])&&$_GET['hours']=='yes'){
         echo getHours();
     }
