@@ -19,7 +19,12 @@
 <link rel="stylesheet" type="text/css" href="../css/mechanic_login.css">
 <title>Bike Resource Center - Mechanic Login</title>
     <script>
-        console.log($("#username").val() + " " + $("#password").val());
+        $(function(){
+            $("#login").click(function(){
+                console.log($("#username").val() + " " + $("#password").val());
+            });
+        });
+        
     </script>
 </head>
 <body>
