@@ -42,6 +42,8 @@
                 printFeedback();
             }
         }
+        sleep(8);
+        header("Location: https://ec2-3-134-90-38.us-east-2.compute.amazonaws.com/pages/about.php");
         ?>
     </div>
 </body>
