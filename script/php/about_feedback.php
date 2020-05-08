@@ -42,7 +42,6 @@
                 printFeedback();
             }
         }
-    
         ?>
         <a href="../../pages/about.php">Click here to return to the about page</a>
     </div>

@@ -17,13 +17,12 @@
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script><script src="../script/index.js"></script>
+  crossorigin="anonymous"></script><script src="../script/js_jquery/services_hours.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="../css/services_hours.css">
 <title>Bike Resource Center - Services &amp; Hours</title>
 </head>
 <body>
-    
     <nav class="navbar navbar-top sticky-top">
         <span id="navbar_title"><a href="index.php" class="text-decoration-none navbar-brand">BRC</a></span>
         <a href="index.php" class="text-decoration-none navbar-brand">Home</a>
