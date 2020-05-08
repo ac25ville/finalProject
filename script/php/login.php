@@ -24,13 +24,13 @@ function handle_login(){
         header("Location: mechanic_pages/mechanic_page.php");
     }else if($username!="test"){
         $error= "Error: Incorect username";
-        login_form();
+        require "mechanic_login.php";
     }else if($password!="pass"){
         $error = "Error: Incorrect password";
-        login_form();
+        require "mechanic_login.php";
     }else{
         $error = "Error: Incorrect username or passowrd";
-        login_form();
+        require "mechanic_login.php";
     }
 }
 
