@@ -4,7 +4,7 @@ $username = empty($_COOKIE['username'])?'':$_COOKIE['username'];
 
 if($username){
     header("Location: ../../pages/mechanic_pages/mechanic_page.php");
-    exit();
+    exit;
 }
 
 $action = empty($_POST['action'])?'':$_POST['action'];
@@ -21,8 +21,8 @@ function handle_login(){
     
     if($username="test" && $password=="pass"){
         setcookie('username', $username);
-        header("Location: mechanic_pages/mechanic_page.php");
-        exit();
+        header("Location: https://www.sitepoint.com/community/t/php-error-redirected-you-too-many-times/256059");
+        exit;
     }else if($username!="test"){
         $error= "Error: Incorect username";
         require "mechanic_login.php";
