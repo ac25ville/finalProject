@@ -1,7 +1,7 @@
 <?php
     require "redirect.php";
     function printFeedback(){
-        echo $_POST['feedback_name']."<br>". $_POST['feedback_sNum']."<br>".$_POST['feedback_response']."<br>";
+        echo "Name: ".$_POST['feedback_name']."<br>Student Number: ". $_POST['feedback_sNum']."<br>Response: ".$_POST['feedback_response']."<br>";
     }
 ?>
 <!DOCTYPE html>
@@ -25,10 +25,17 @@
   crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="../../css/about.css">
+    <style>
+        .response{
+            font-size: 20px;
+            margin-top: 15%;
+        }
+    </style>
 <title>Bike Resource Center - About the Project</title>
 </head>
 <body>
-    <div class="content">
+    <div id="page_title">Thank you for your feedback!</div>
+    <div class="content response">
         <?php
         if(isset($_GET['funct'])){
             if($_GET['funct']=='printFeedback'){
