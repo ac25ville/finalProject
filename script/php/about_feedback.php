@@ -9,13 +9,12 @@
 //        fwrite($file, 'endofpost\n');
 //        fclose($file);
         echo $_POST['feedback_name'].'\n'. $_POST['feedback_sNum'].'\n'.$_POST['feedback_response'].'\n';
-        
     }
 
     if(isset($_GET['funct'])){
         if($_GET['funct']=='printFeedback'){
             writeFeedback();
-            sleep(8);header("http://ec2-3-134-90-38.us-east-2.compute.amazonaws.com/pages/about.html");
+            header("http://ec2-3-134-90-38.us-east-2.compute.amazonaws.com/pages/about.html");
     }
     
 }
