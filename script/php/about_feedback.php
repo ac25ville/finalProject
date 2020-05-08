@@ -42,9 +42,9 @@
                 printFeedback();
             }
         }
-        sleep(8);
-        header("Location: https://ec2-3-134-90-38.us-east-2.compute.amazonaws.com/pages/about.php");
+    
         ?>
+        <a href="../../pages/about.php">Click here to return to the about page</a>
     </div>
 </body>
 </html>
