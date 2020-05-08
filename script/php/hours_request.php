@@ -13,6 +13,6 @@
     }
     
     if(isset($_GET['hours'])&&$_GET['hours']=='yes'){
-        getHours();
-    }d
+        echo getHours();
+    }
 ?>
