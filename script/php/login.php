@@ -19,11 +19,11 @@ function handle_login(){
     $username = empty($_POST['username'])?'':$_POST['username'];
     $password = empty($_POST['password'])?'':$_POST['password'];
     
-    $loginURL = "../../pages/mechanic_login.php";
+    $loginURL = "mechanic_login.php";
     
     if($username="test" && $password=="pass"){
         setcookie('username', $username);
-        header("Location: https://www.google.com/");
+        header("Location: mechanic_pages/mechanic_page.php");
     }else if($username!="test"){
         $error= "Error: Incorect username";
         require $loginURL;
