@@ -22,6 +22,7 @@ function handle_login(){
     if($username="test" && $password=="pass"){
         setcookie('username', $username);
         header("Location: mechanic_pages/mechanic_page.php");
+        exit;
     }else if($username!="test"){
         $error= "Error: Incorect username";
         require "mechanic_login.php";
