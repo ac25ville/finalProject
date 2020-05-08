@@ -3,7 +3,6 @@
     function printFeedback(){
         echo $_POST['feedback_name']."<br>". $_POST['feedback_sNum']."<br>".$_POST['feedback_response']."<br>";
     }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
