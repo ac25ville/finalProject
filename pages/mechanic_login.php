@@ -4,7 +4,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <!--
     Name: Austin Corteville
     Pawprint: acc9cm
@@ -19,12 +18,13 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-<script src="../script/js_jquery/index.js"></script>
+<!--    <script src="../script/index.js"></script>-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../css/index.css">
-<title>Bike Resource Center - Home</title>
+<link rel="stylesheet" type="text/css" href="../css/mechanic_login.css">
+<title>Bike Resource Center - Mechanic Login</title>
 </head>
 <body>
+    
     <nav class="navbar navbar-top sticky-top">
         <span id="navbar_title"><a href="index.php" class="text-decoration-none navbar-brand">BRC</a></span>
         <a href="index.php" class="text-decoration-none navbar-brand">Home</a>
@@ -33,22 +33,20 @@
         <a href="self_help_diy.php" class="text-decoration-none navbar-brand">Self Help &amp; DIY</a>
         <a href="mechanic_login.php" class="text-decoration-none navbar-brand">Mechanic Login</a>
     </nav>
-    
     <div id="page_title">
-        Bike Resource Center: Home
+        Mechanic Login
     </div>
     
-    <div id="page_top_img_wrap">
-        <img class="shadow-lg page_top_img" src="../images/home_page_top.png" alt="bike with repair sign">
-        <img class="shadow-lg page_top_img" src="../images/parktools_wrench.png" alt="two wrenches, one is parktools">
-    </div>
-    
-    <div class="shadow content">
-        Welcome to the Bike Resource Center webpage! This is a tool currently in development for the use of customers and mechanics. This is just one of the many tools we have in our toolbox to help us do our jobs better.
-    </div>
-    
-    <div class="shadow content">
-        This page is currently being written by Austin Corteville, a former mechanic for the Bike Resource Center.
+    <div id="login_wrap">
+        <h2>Login</h2>
+        <p>This is the login for the Bike Resource Center Mechanics.</p>
+        <form id="login_form" action="#" method="POST">
+            <label for="username">Username:</label> <input type="text" id="username">
+            <br>
+            <label for="password">Password:</label> <input type="password" id="password">
+            <br>
+            <button type="button" id="login">Login</button>
+        </form>
     </div>
 
 </body>
