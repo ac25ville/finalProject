@@ -3,7 +3,7 @@
 
     $username = empty($_COOKIE['username'])?'': $_COOKIE['username'];
     if(!$username){
-        header("Location: login.php");
+        header("Location: ../../script/php/login.php");
         exit;
     }
 ?>
