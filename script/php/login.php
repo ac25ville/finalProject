@@ -19,20 +19,18 @@ function handle_login(){
     $username = empty($_POST['username'])?'':$_POST['username'];
     $password = empty($_POST['password'])?'':$_POST['password'];
     
-    $loginURL = "mechanic_login.php";
-    
     if($username="test" && $password=="pass"){
         setcookie('username', $username);
-        header("Location: mechanic_pages/mechanic_page.php");
+        header("Location: ../../pages/mechanic_pages/mechanic_page.php");
     }else if($username!="test"){
         $error= "Error: Incorect username";
-        require $loginURL;
+        login_form();
     }else if($password!="pass"){
         $error = "Error: Incorrect password";
-        require $loginURL;
+        login_form();
     }else{
         $error = "Error: Incorrect username or passowrd";
-        require $loginURL;
+        login_form();
     }
 }
 
