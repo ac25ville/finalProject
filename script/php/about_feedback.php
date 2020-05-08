@@ -14,8 +14,7 @@
     if(isset($_GET['funct'])){
         if($_GET['funct']=='printFeedback'){
             writeFeedback();
-            header("http://ec2-3-134-90-38.us-east-2.compute.amazonaws.com/pages/about.html");
-    }
-    
+            header("Location: http://ec2-3-134-90-38.us-east-2.compute.amazonaws.com/pages/about.html");
+    } 
 }
 ?>
