@@ -1,4 +1,6 @@
-
+<?php 
+    require ../script/php/redirect.php
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +13,6 @@
 
     @refrences:
     -->
-    <script>
-        <?php 
-            require ../script/php/redirect.php
-        ?>
-        
-    </script>
 <meta charset = "UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 <script
