@@ -3,6 +3,6 @@
 $(function(){
     var day = "";
      $.get("../php/hours_request.php?hours=yes&day="+day, function(){
-        alert("success"); 
+        console.log("success");
      });
 });
