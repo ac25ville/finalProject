@@ -8,7 +8,7 @@
 //        fwrite($file, $_POST['feedback_response'].'\n');
 //        fwrite($file, 'endofpost\n');
 //        fclose($file);
-        echo $_POST['feedback_name'].'\n'. $_POST['feedback_sNum'].'\n'.$_POST['feedback_response'].'\n';
+        echo $_POST['feedback_name']."\n". $_POST['feedback_sNum']."\n".$_POST['feedback_response']."\n";
     }
 
     if(isset($_GET['funct'])){
