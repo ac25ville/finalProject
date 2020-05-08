@@ -1,11 +1,11 @@
 <?php 
-    require "../../script/php/redirect.php";
-
     $username = empty($_COOKIE['username'])?'': $_COOKIE['username'];
     if(!$username){
         header("Location: ../../script/php/login.php");
         exit;
     }
+
+//    require "../../script/php/redirect.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
