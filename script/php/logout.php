@@ -2,7 +2,7 @@
 
     setcookie('username', '', 1);
 
-    header("Location: ../../pages/mechanic_login.php");
+    header("Location: ../mechanic_login.php");
     
     exit;
 ?>
