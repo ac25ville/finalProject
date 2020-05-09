@@ -3,7 +3,7 @@
 $username = empty($_COOKIE['_lin'])?'':$_COOKIE['_lin'];
 
 if($username){
-    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
+    header("Location: mechanic_pages/mechanic_page.php");
     exit;
 }
 
