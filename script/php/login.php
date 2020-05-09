@@ -1,6 +1,6 @@
 <?php
 
-$username = empty($_COOKIE['username'])?'':$_COOKIE['username'];
+$username = empty($_COOKIE['_lin'])?'':$_COOKIE['_lin'];
 
 if($username){
     header("Location: ../../pages/mechanic_pages/mechanic_page.php");
