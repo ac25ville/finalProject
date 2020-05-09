@@ -30,6 +30,7 @@
     <script>
         $(function(){
            $("#logout").click(function(){
+               console.log("poo");
                $(this).attr("href", "../../script/php/logout.php");
            }); 
         });
