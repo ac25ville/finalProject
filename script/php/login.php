@@ -8,7 +8,7 @@ if($username){
 }
 
 $action = empty($_POST['action'])?'':$_POST['action'];
-
+    echo $action;
 if($action=='do_login'){
     handle_login();
 }else{
