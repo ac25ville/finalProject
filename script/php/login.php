@@ -20,7 +20,7 @@ function handle_login(){
     $password = empty($_POST['password'])?'':$_POST['password'];
     
     if($username=="test" && $password=="pass"){
-        setcookie('username', $username);
+        setcookie('_lin', $username);
         header("Location: mechanic_pages/mechanic_page.php");
         exit;
     }else if($username!="test"){

@@ -42,21 +42,21 @@
     </div>
     
     <div id="login_wrap">
-        <h2>Login</h2>
-        <p>This is the login for the Bike Resource Center Mechanics.</p>
-        <form id="login_form" action="../script/php/login.php" method="POST">
-            <?php
+        <h2>BRC Login</h2>
+        <?php
                 if($error){
                     print "<p>".$error."</p>";
                 }
             ?>
+        <form id="login_form" action="../script/php/login.php" method="POST">
+            
             <input type="hidden" name="action" value="do_login">
             
             <label for="username">Username:</label> <input type="text" id="username" name="username">
             <br>
             <label for="password">Password:</label> <input type="password" id="password" name="password">
             <br>
-            <button type="submit" id="login">Login</button>
+            <input type="submit" id="login">
             
         </form>
     </div>

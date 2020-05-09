@@ -1,6 +1,6 @@
 <?php 
-//    $username = empty($_COOKIE['username'])?'': $_COOKIE['username'];
-//    if(!$username){
+//    $_lin = empty($_COOKIE['_lin'])?'': $_COOKIE['_lin'];
+//    if(!$_lin){
 //        header("Location: ../mechanic_login.php");
 //        exit;
 //    }
