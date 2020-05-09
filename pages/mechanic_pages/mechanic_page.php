@@ -39,7 +39,7 @@
 <body>
     
     <div>
-        <button id="logout"></button>
+        <button id="logout">Logout</button>
     </div>
 
 </body>
