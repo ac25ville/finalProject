@@ -37,13 +37,13 @@
     </div>
     
     <div class="shadow content clearfix">
-        <img src="../images/flat_tire.png">
+        <img src="../images/flat_tire.png" alt="flat tire">
         <h2>Services:</h2>
         The Bike Resource Center offers a variety of services! These services, while always growing and developing as the program grows and develops through the mechanics who are the backbone of what we do, include flat tire repair all the way to an emergency wheel truing.
     </div>
     
     <div class="shadow content clearfix">
-        <img src="../images/mizzou_clock.png">
+        <img src="../images/mizzou_clock.png" alt="mizzou themed clock">
         <h2>Hours:</h2>
         <h4 id="monday">Monday: N/A</h4>
         <h4 id="tuesday">Tuesday: N/A</h4>

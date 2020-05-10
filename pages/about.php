@@ -37,7 +37,7 @@
         Bike Resource Center: About the Project
     </div>
     
-    <img src="../images/sustain.png" class="shadow">
+    <img src="../images/sustain.png" class="shadow" alt="sustainablity graphic">
     
     <div class="content shadow">
         <h3>Mission</h3>
