@@ -1,3 +1,6 @@
+<?php
+    require "../../script/php/redirect.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
