@@ -19,7 +19,6 @@ if($action=='do_login'){
 function handle_login(){
     $username = empty($_POST['username'])?'':$_POST['username'];
     $password = empty($_POST['password'])?'':$_POST['password'];
-    echo "2";
     if($username=="test" && $password=="pass"){
         setcookie('_lin', $username);
         header("Location: /mechanic_pages/mechanic_page.php");
@@ -37,7 +36,6 @@ function handle_login(){
 }
 
 function login_form(){
-    echo "3";
     $username = "";
     $error = "";
     require "mechanic_login.php";

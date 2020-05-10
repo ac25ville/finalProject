@@ -4,7 +4,7 @@
 //        header("Location: ../mechanic_login.php");
 //        exit;
 //    }
-//    require "../../script/php/redirect.php";
+    require "../../script/php/redirect.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
