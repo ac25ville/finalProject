@@ -1,6 +1,6 @@
 <?php
 
-$username = empty($_COOKIE['_lin'])?'':$_COOKIE['_lin'];
+$username = empty($_COOKIE['_lin'])?null:$_COOKIE['_lin'];
 
 if($username){
     echo "1";
