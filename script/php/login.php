@@ -3,7 +3,8 @@
 $username = empty($_COOKIE['_lin'])?'':$_COOKIE['_lin'];
 
 if($username){
-    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
+    echo "1";
+//    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
     exit;
 }
 
@@ -19,6 +20,7 @@ function handle_login(){
     $username = empty($_POST['username'])?'':$_POST['username'];
     $password = empty($_POST['password'])?'':$_POST['password'];
     if($username=="test" && $password=="pass"){
+        echo "2";
         setcookie('_lin', $username);
         header("Location: /mechanic_pages/mechanic_page.php");
         exit;
@@ -35,8 +37,10 @@ function handle_login(){
 }
 
 function login_form(){
+    echo "3";
     $username = "";
     $error = "";
-    require "mechanic_login.php";
+    exit;
+//    require "mechanic_login.php";
 }
 ?>
