@@ -1,9 +1,9 @@
 <?php 
-//    $_lin = empty($_COOKIE['_lin'])?'': $_COOKIE['_lin'];
-//    if(!$_lin){
-//        header("Location: ../mechanic_login.php");
-//        exit;
-//    }
+    $_lin = empty($_COOKIE['_lin'])?'': $_COOKIE['_lin'];
+    if(!$_lin){
+        header("Location: ../mechanic_login.php");
+        exit;
+    }
     require "../../script/php/redirect.php";
 ?>
 <!DOCTYPE html>

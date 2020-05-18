@@ -4,7 +4,7 @@ $username = empty($_COOKIE['_lin'])?null:$_COOKIE['_lin'];
 
 if($username!=null){
     echo "1";
-//    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
+    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
     exit;
 }
 
