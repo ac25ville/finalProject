@@ -3,17 +3,14 @@
 $username = empty($_COOKIE['_lin'])?NULL:$_COOKIE['_lin'];
 
 if(!is_null($username)){
-    echo $username;
-//    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
+    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
     exit;
 }
 
 $action = empty($_POST['action'])?'':$_POST['action'];
 
 if($action=='do_login'){
-    echo $action;
-    exit;
-//    handle_login();
+    handle_login();
 }else{
     login_form();
 }
