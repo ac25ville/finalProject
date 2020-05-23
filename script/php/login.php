@@ -20,7 +20,8 @@ function handle_login(){
     $password = empty($_POST['password'])?'':$_POST['password'];
     if($username=="test" && $password=="pass"){
         setcookie('_lin', $username);
-        echo $username. " " .$password;
+//        echo $username. " " .$password;
+        echo "1";
 //        header("Location: /mechanic_pages/mechanic_page.php");
         exit;
     }else if($username!="test"){
