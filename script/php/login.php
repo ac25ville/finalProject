@@ -18,6 +18,7 @@ if($action=='do_login'){
 function handle_login(){
     $username = empty($_POST['username'])?'':$_POST['username'];
     $password = empty($_POST['password'])?'':$_POST['password'];
+    $failRedirect = "Location: ../../pages/mechanic_login.php";
     if($username=="test" && $password=="pass"){
         setcookie('_lin', $username);
 //        echo $username. " " .$password;
@@ -28,21 +29,26 @@ function handle_login(){
         $error = "Error: Incorrect username or password";
 //        echo $error;
 //        exit;
-        require "../../pages/mechanic_login.php";
+        requireRedirect($failRedirect);
     }else if($password!="pass"){
         $error = "Error: Incorrect password";
 //        echo $error;
 //        exit;
-        require "../../pages/mechanic_login.php";
+        requireRedirect($failRedirect);
     }else if($username!="test"){
         $error= "Error: Incorrect username";
 //        echo $error;
 //        exit;
-        require "../../pages/mechanic_login.php";
+        requireRedirect($failRedirect);
     }else{
         echo "Last block";
         exit;
     }
+}
+
+function requireRedirect($loc){
+    header($loc);
+    exit;
 }
 
 function login_form(){
