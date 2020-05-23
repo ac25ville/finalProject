@@ -25,18 +25,12 @@ function handle_login(){
         exit;
     }else if($username!="test" && $password!="pass"){
         $error = "Error: Incorrect username or password";
-//        echo $error;
-//        exit;
         requireRedirect($failRedirect);
     }else if($password!="pass"){
         $error = "Error: Incorrect password";
-//        echo $error;
-//        exit;
         requireRedirect($failRedirect);
     }else if($username!="test"){
         $error= "Error: Incorrect username";
-//        echo $error;
-//        exit;
         requireRedirect($failRedirect);
     }else{
         echo "Last block";
