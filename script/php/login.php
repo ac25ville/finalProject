@@ -22,10 +22,10 @@ function handle_login(){
         setcookie('_lin', $username);
 //        echo $username. " " .$password;
         echo "1";
-//        header("Location: /mechanic_pages/mechanic_page.php");
+//        header("Location: ../../pages/mechanic_pages/mechanic_page.php");
         exit;
-    }else if($username!="test"){
-        $error= "Error: Incorect username";
+    }else if($username!="test" && $password!="pass"){
+        $error = "Error: Incorrect username or passowrd";
         echo $error;
         exit;
 //        require "mechanic_login.php";
@@ -34,11 +34,14 @@ function handle_login(){
         echo $error;
         exit;
 //        require "mechanic_login.php";
-    }else{
-        $error = "Error: Incorrect username or passowrd";
+    }else if($username!="test"){
+        $error= "Error: Incorrect username";
         echo $error;
         exit;
 //        require "mechanic_login.php";
+    }else{
+        echo "Last block";
+        exit;
     }
 }
 
