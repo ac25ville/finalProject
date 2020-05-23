@@ -18,6 +18,8 @@ if($action=='do_login'){
 function handle_login(){
     $username = empty($_POST['username'])?'':$_POST['username'];
     $password = empty($_POST['password'])?'':$_POST['password'];
+    echo "1";
+    exit;
     if($username=="test" && $password=="pass"){
         setcookie('_lin', $username);
 //        echo $username. " " .$password;
