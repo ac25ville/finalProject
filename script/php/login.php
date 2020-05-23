@@ -6,9 +6,6 @@ if(!is_null($username)){
     echo $username;
 //    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
     exit;
-}else
-{
-   echo "1";
 }
 
 $action = empty($_POST['action'])?'':$_POST['action'];
