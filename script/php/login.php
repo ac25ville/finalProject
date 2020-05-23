@@ -33,12 +33,12 @@ function handle_login(){
         $error = "Error: Incorrect password";
 //        echo $error;
 //        exit;
-        require "mechanic_login.php";
+        require "../../pages/mechanic_login.php";
     }else if($username!="test"){
         $error= "Error: Incorrect username";
 //        echo $error;
 //        exit;
-        require "mechanic_login.php";
+        require "../../pages/mechanic_login.php";
     }else{
         echo "Last block";
         exit;
