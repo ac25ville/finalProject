@@ -8,7 +8,7 @@ if($username){
     exit;
 }else
 {
-    echo "1";
+   continue;
 }
 
 $action = empty($_POST['action'])?'':$_POST['action'];
