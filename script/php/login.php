@@ -25,20 +25,20 @@ function handle_login(){
 //        header("Location: ../../pages/mechanic_pages/mechanic_page.php");
         exit;
     }else if($username!="test" && $password!="pass"){
-        $error = "Error: Incorrect username or passowrd";
-        echo $error;
-        exit;
-//        require "mechanic_login.php";
+        $error = "Error: Incorrect username or password";
+//        echo $error;
+//        exit;
+        require "../../pages/mechanic_login";
     }else if($password!="pass"){
         $error = "Error: Incorrect password";
-        echo $error;
-        exit;
-//        require "mechanic_login.php";
+//        echo $error;
+//        exit;
+        require "mechanic_login.php";
     }else if($username!="test"){
         $error= "Error: Incorrect username";
-        echo $error;
-        exit;
-//        require "mechanic_login.php";
+//        echo $error;
+//        exit;
+        require "mechanic_login.php";
     }else{
         echo "Last block";
         exit;
