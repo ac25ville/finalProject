@@ -21,9 +21,7 @@ function handle_login(){
     $failRedirect = "Location: ../../pages/mechanic_login.php";
     if($username=="test" && $password=="pass"){
         setcookie('_lin', $username);
-//        echo $username. " " .$password;
-        echo "1";
-//        header("Location: ../../pages/mechanic_pages/mechanic_page.php");
+        header("Location: ../../pages/mechanic_pages/mechanic_page.php");
         exit;
     }else if($username!="test" && $password!="pass"){
         $error = "Error: Incorrect username or password";
