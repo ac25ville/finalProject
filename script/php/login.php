@@ -26,13 +26,19 @@ function handle_login(){
         exit;
     }else if($username!="test"){
         $error= "Error: Incorect username";
-        require "mechanic_login.php";
+        echo "1";
+        exit;
+//        require "mechanic_login.php";
     }else if($password!="pass"){
         $error = "Error: Incorrect password";
-        require "mechanic_login.php";
+        echo "2";
+        exit;
+//        require "mechanic_login.php";
     }else{
         $error = "Error: Incorrect username or passowrd";
-        require "mechanic_login.php";
+        echo "3";
+        exit;
+//        require "mechanic_login.php";
     }
 }
 
