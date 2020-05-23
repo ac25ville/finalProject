@@ -1,6 +1,6 @@
 <?php
 
-//    setcookie('_lin', '', 1);
+    setcookie('_lin', '', 1);
 
     header("Location: login.php");
     
