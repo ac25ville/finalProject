@@ -3,10 +3,12 @@
 $username = empty($_COOKIE['_lin'])?'':$_COOKIE['_lin'];
 
 if($username){
-//    echo $username;
-    echo "1";
+    echo $username;
 //    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
     exit;
+}else
+{
+    echo "1";
 }
 
 $action = empty($_POST['action'])?'':$_POST['action'];
