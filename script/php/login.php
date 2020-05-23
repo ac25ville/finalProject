@@ -8,13 +8,15 @@ if($username){
     exit;
 }else
 {
-   continue;
+   echo "1";
 }
 
 $action = empty($_POST['action'])?'':$_POST['action'];
 
 if($action=='do_login'){
-    handle_login();
+    echo $action;
+    exit;
+//    handle_login();
 }else{
     login_form();
 }
