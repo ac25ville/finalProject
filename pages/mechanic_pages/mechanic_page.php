@@ -4,7 +4,7 @@
 //        header("Location: ../mechanic_login.php");
 //        exit;
 //    }
-    require "../../script/php/redirect.php";
+//    require "../../script/php/redirect.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,10 +37,7 @@
 <title>Bike Resource Center - Mechanic Page 1</title>
 </head>
 <body>
-    
-    <div>
         <button id="logout">Logout</button>
-    </div>
 
 </body>
 </html>
