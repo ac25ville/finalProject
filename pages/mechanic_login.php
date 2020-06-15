@@ -24,7 +24,7 @@
     <script>
         $(function(){
            $("#login").click(function(){
-               
+               console.log($("username").val()+" "+$("password").val());
            }); 
         });
     </script>
