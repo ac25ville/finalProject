@@ -1,15 +1,15 @@
 <?php
 
-$username = empty($_COOKIE['_lin'])?NULL:$_COOKIE['_lin'];
+$username = empty($_COOKIE['username'])?'':$_COOKIE['username'];
 
-if(!is_null($username)){
-    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
+if($username){
+    echo "mechanic page";
     exit;
 }
 
 $action = empty($_POST['action'])?'':$_POST['action'];
 
-if($action=='do_login'){
+if($action == 'do_login'){
     handle_login();
 }else{
     login_form();
@@ -18,38 +18,33 @@ if($action=='do_login'){
 function handle_login(){
     $username = empty($_POST['username'])?'':$_POST['username'];
     $password = empty($_POST['password'])?'':$_POST['password'];
-    $failRedirect = "Location: ../../pages/mechanic_login.php";
-    if($username=="test" && $password=="pass"){
-        
-        setcookie('_lin', $username);
-        echo $username. " ".$password;
-//        header("Location: ../../pages/mechanic_pages/mechanic_page.php");
-        exit;
-    }else if($username!="test" && $password!="pass"){
-        $error = "Error: Incorrect username or password";
-        requireRedirect($failRedirect);
-    }else if($password!="pass"){
-        $error = "Error: Incorrect password";
-        requireRedirect($failRedirect);
-    }else if($username!="test"){
-        $error= "Error: Incorrect username";
-        requireRedirect($failRedirect);
-    }else{
-        echo "Last block";
+    
+    if($username=='test' && $password="pass"){
+        setcookie('username', $username);
+        echo "cookie set as username: ".$username;
         exit;
     }
-}
-
-function requireRedirect($loc){
-    header($loc);
-    exit;
+    else if($username != 'test'){
+        $error = "Error: Incorrect username";
+        echo $error;
+        exit;
+    }
+    else if($username != 'pass'){
+        $error = "Error: Incorrect password";
+        echo $error;
+        exit;
+    }else{
+        $error = "Error: Incorrect username and password";
+        echo $error;
+        exit;
+    }
+    
 }
 
 function login_form(){
-    echo "3";
     $username = "";
     $error = "";
+    echo "require mechanic login";
     exit;
-//    require "mechanic_login.php";
 }
 ?>
