@@ -22,7 +22,6 @@ function handle_login(){
     if(strcmp($username,'test') && strcmp($password,'pass')){
         setcookie('username', $username);
         echo "cookie set as username: ".$username;
-        setcookie ('username' , '', 1);
         exit;
     }
     else if($username != 'test'){
