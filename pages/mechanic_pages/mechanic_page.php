@@ -31,6 +31,10 @@
 <title>Bike Resource Center - Mechanic Page 1</title>
 </head>
 <body>
+    <?php
+                $val  = $_COOKIE['username'];
+                print "<p>$val</p>";
+    ?>
         <button id="logout">Logout</button>
 
 </body>
