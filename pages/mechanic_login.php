@@ -47,7 +47,7 @@
         <h2>BRC Login</h2>
         <?php
                 if($error){
-                    print "<p>".$error."</p>";
+                    print "<p>$error</p>";
                 }
             ?>
         <form id="login_form" action="../script/php/login.php" method="POST">
