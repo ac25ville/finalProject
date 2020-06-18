@@ -1,8 +1,8 @@
 <?php
 
-    setcookie('_lin', '', 1);
+    setcookie('username', '', 1);
 
     header("Location: login.php");
-    
+
     exit;
 ?>

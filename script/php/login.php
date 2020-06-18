@@ -23,19 +23,9 @@ function handle_login(){
         setcookie('username', $username);
         echo "cookie set as username: ".$username;
         exit;
-    }
-    else if($username != 'test'){
-        $error = "Error: Incorrect username";
-        echo $error;
-        exit;
-    }
-    else if($username != 'pass'){
-        $error = "Error: Incorrect password";
-        echo $error;
-        exit;
     }else{
-        $error = "Error: Incorrect username and password";
-        echo $error;
+        $error = "Error: Incorrect username and/or password";
+        header("");
         exit;
     }
     
