@@ -49,6 +49,8 @@
                 if($error){
                     print "<p>$error</p>";
                 }
+
+                print ""
             ?>
         <form id="login_form" action="../script/php/login.php" method="POST">
             
