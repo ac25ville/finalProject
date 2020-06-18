@@ -3,7 +3,7 @@
 $username = empty($_COOKIE['username'])?'':$_COOKIE['username'];
 
 if($username){
-    echo "mechanic page";
+    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
     exit;
 }
 
@@ -21,12 +21,10 @@ function handle_login(){
     
     if($username=="test" && $password=="pass"){
         setcookie('username', $username);
-        echo "cookie set as username: ".$username;
-        exit;
+        require "../../pages/mechanic_pages/mechanic_page.php";
     }else{
         $error = "Error: Incorrect username and/or password";
-        header("Location: ../../pages/mechanic_login.php");
-        exit;
+        require "../../pages/mechanic_login.php";
     }
     
 }
@@ -34,7 +32,6 @@ function handle_login(){
 function login_form(){
     $username = "";
     $error = "";
-    echo "require mechanic login";
-    exit;
+    require "../../pages/mechanic_login.php";
 }
 ?>
