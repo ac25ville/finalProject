@@ -1,13 +1,13 @@
 <?php
-
-$username = empty($_COOKIE['username'])?'':$_COOKIE['username'];
+#../../pages/mechanic_pages/mechanic_page.php
+#../../pages/mechanic_login.php
 
 if($username){
     header("Location: ../../pages/mechanic_pages/mechanic_page.php");
     exit;
 }
 
-$action = empty($_POST['action'])?'':$_POST['action'];
+$action = empty($_POSTS['action'])?'':$_POST['action'];
 
 if($action == 'do_login'){
     handle_login();
@@ -16,23 +16,14 @@ if($action == 'do_login'){
 }
 
 function handle_login(){
-    $username = empty($_POST['username'])?'':$_POST['username'];
-    $password = empty($_POST['password'])?'':$_POST['password'];
-    
-    if($username=="test" && $password=="pass"){
-        setcookie('username', $username);
-        header("Location ../../pages/mechanic_pages/mechanic_page.php");
-        exit;
-    }else{
-        $error = "Error: Incorrect username and/or password";
-        require "../../pages/mechanic_login.php";
-    }
     
 }
 
 function login_form(){
-    $username = "";
-    $error = "";
+    $username="";
+    $error="";
     require "../../pages/mechanic_login.php";
 }
+
 ?>
+
