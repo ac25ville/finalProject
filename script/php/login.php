@@ -37,7 +37,8 @@ function handle_login(){
 function login_form(){
     $username="";
     $error="";
-    require "../../pages/mechanic_login.php";
+    header("Location: ../../pages/mechanic_login.php");
+    exit;
 }
 
 ?>
