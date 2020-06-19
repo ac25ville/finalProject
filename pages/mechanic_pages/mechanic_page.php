@@ -35,7 +35,7 @@
                 $val  = $_COOKIE['username'];
                 print "<p>$val</p>";
     ?>
-        <button id="logout">Logout</button>
+        <button id="logout" href="../../script/php/logout.php">Logout</button>
 
 </body>
 </html>
