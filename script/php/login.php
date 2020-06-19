@@ -10,7 +10,7 @@ if($username){
     exit;
 }
 
-$action = empty($_POSTS['action'])?'':$_POST['action'];
+$action = empty($_POST['action'])?'':$_POST['action'];
 
 if($action == 'do_login'){
     handle_login();
@@ -29,7 +29,9 @@ function handle_login(){
         exit;
     }else{
         $error = "Error: Incorrect username or password";
-        require "../../pages/mechanic_login.php";
+        echo "cookie not created";
+        exit;
+//        require "../../pages/mechanic_login.php";
     }
 }
 
