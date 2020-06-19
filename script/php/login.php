@@ -31,7 +31,8 @@ $username = empty($_COOKIE['username']) ? '' : $_COOKIE['username'];
 		if ($username == "test" && $password == "pass") {
             // If they match, set a cookie and send the user to page1.php
 			setcookie('username', $username);
-			header("Location: ../../pages/mechanic_pages/mechanic_page.php");
+//			header("Location: ../../pages/mechanic_pages/mechanic_page.php");
+            echo "cookie created";
 			exit;
 		} else {
 			$error = 'Error: Incorrect username or password';
