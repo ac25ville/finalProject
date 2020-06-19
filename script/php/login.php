@@ -2,7 +2,7 @@
 #../../pages/mechanic_pages/mechanic_page.php
 #../../pages/mechanic_login.php
 
-$username = empty($_COOKIE['username'])?'':$_COOKIE['username'];
+$username = empty($_COOKIE['username'])?"":$_COOKIE['username'];
 
 if($username){
     header("Location: ../../pages/mechanic_pages/mechanic_page.php");
@@ -18,8 +18,8 @@ if($action == 'do_login'){
 }
 
 function handle_login(){
-    $username = empty($_POST['username'])?'': $_POST['username'];
-    $password = empty($_POST['password'])?'': $_POST['password'];
+    $username = empty($_POST['username'])?"": $_POST['username'];
+    $password = empty($_POST['password'])?"": $_POST['password'];
     
     if($username=="test" && $password=="pass"){
         setcookie("username", $username);
