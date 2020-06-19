@@ -29,7 +29,8 @@ function handle_login(){
         exit;
     }else{
         $error = "Error: Incorrect username or password";
-        require "../../pages/mechanic_login.php";
+        header("Location: ../../pages/mechanic_login.php");
+        exit;
     }
 }
 
