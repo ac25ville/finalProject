@@ -21,13 +21,6 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="../css/mechanic_login.css">
 <title>Bike Resource Center - Mechanic Login</title>
-    <script>
-        $(function(){
-           $("#login").click(function(){
-               console.log($("#username").val()+" "+$("#password").val());
-           }); 
-        });
-    </script>
 </head>
 <body>
     
@@ -50,16 +43,23 @@
                     print "<p>$error</p>";
                 }
             ?>
-        <form id="login_form" action="../script/php/login.php" method="POST">
+        <form action="../script/php/login.php" method="post">
             
             <input type="hidden" name="action" value="do_login">
             
-            <label for="username">Username:</label> <input type="text" id="username" name="username">
-            <br>
-            <label for="password">Password:</label> <input type="password" id="password" name="password">
-            <br>
-            <input type="submit" id="login" value="Login">
             
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" autofocus value="<?php print $username ?>">
+            </div>
+            
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
         </form>
     </div>
 
