@@ -29,16 +29,14 @@ function handle_login(){
         exit;
     }else{
         $error = "Error: Incorrect username or password";
-        header("Location: ../../pages/mechanic_login.php");
-        exit;
+        require "../../pages/mechanic_login.php";
     }
 }
 
 function login_form(){
     $username="";
     $error="";
-    header("Location: ../../pages/mechanic_login.php");
-    exit;
+    require "../../pages/mechanic_login.php";
 }
 
 ?>
