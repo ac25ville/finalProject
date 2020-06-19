@@ -6,8 +6,7 @@ $username = empty($_COOKIE['username']) ? '' : $_COOKIE['username'];
 	
 	// If the user is logged in, redirect them home
 	if ($username) {
-//		header("Location: ../../pages/mechanic_pages/mechanic_page.php");
-        echo "cookie already exists";
+		header("Location: ../../pages/mechanic_pages/mechanic_page.php");
 		exit;
 	}
 	
@@ -31,13 +30,11 @@ $username = empty($_COOKIE['username']) ? '' : $_COOKIE['username'];
 		if ($username == "test" && $password == "pass") {
             // If they match, set a cookie and send the user to page1.php
 			setcookie('username', $username);
-//			header("Location: ../../pages/mechanic_pages/mechanic_page.php");
-            echo "cookie created";
+			header("Location: ../../pages/mechanic_pages/mechanic_page.php");
 			exit;
 		} else {
 			$error = 'Error: Incorrect username or password';
 			require "../../pages/mechanic_login.php";
-            echo "cookie not created";
             exit;
 		}		
 	}
@@ -45,8 +42,7 @@ $username = empty($_COOKIE['username']) ? '' : $_COOKIE['username'];
 	function login_form() {
 		$username = "";
 		$error = "";
-//		require "../../pages/mechanic_login.php";
-        echo "login form function";
+		require "../../pages/mechanic_login.php";
         exit;
 	}
 
