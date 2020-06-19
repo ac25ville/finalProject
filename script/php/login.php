@@ -5,7 +5,8 @@
 $username = empty($_COOKIE['username'])?"":$_COOKIE['username'];
 
 if($username){
-    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
+//    header("Location: ../../pages/mechanic_pages/mechanic_page.php");
+    echo "cookie already exists";
     exit;
 }
 
@@ -23,7 +24,8 @@ function handle_login(){
     
     if($username=="test" && $password=="pass"){
         setcookie("username", $username);
-        header("Location: ../../pages/mechanic_pages/mechanic_page.php");
+//        header("Location: ../../pages/mechanic_pages/mechanic_page.php");
+        echo "cookie created";
         exit;
     }else{
         $error = "Error: Incorrect username or password";

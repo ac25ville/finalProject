@@ -49,8 +49,6 @@
                 if($error){
                     print "<p>$error</p>";
                 }
-                $val  = $_COOKIE['username'];
-                print "<p>$val</p>";
             ?>
         <form id="login_form" action="../script/php/login.php" method="POST">
             
